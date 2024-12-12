@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Property Sale</title>
+    <link rel="stylesheet"
+          href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Register Property</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Form</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Easily sell your home</h1>
+                <p>Describe your home and mark the options it has</p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Ad Title <span class="required-field">*</span></label>
+                        <input type="text"
+                               id="title"
+                               name="title"
+                               class="block"
+                               placeholder="A title to advertise your home"
+                               minlength="1"
+                               maxlength="30"
+                               required>
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Price <span class="required-field">*</span></label>
+                        <input type="number"
+                               id="price"
+                               name="price"
+                               class="block"
+                               placeholder="The price of your house"
+                               minlength="1"
+                               maxlength="30"
+                               required>
+                    </div>
+                    <div class="box-input">
+                        <label for="address">Address<span class="required-field">*</span></label>
+                        <input type="text"
+                               id="address"
+                               name="address"
+                               class="block"
+                               placeholder="A address to advertise your home"
+                               minlength="1"
+                               required>
+                    </div>
+                    <div class="box-input">
+                        <label for="neighborhood">Neighborhood<span class="required-field">*</span></label>
+                        <input type="text"
+                               id="neighborhood"
+                               name="neighborhood"
+                               class="block"
+                               placeholder="A neighborhood to advertise your home"
+                               minlength="1"
+                               required>
+                    </div>
+                    <div class="box-input">
+                        <label for="description">Description <span class="required-field">*</span></label>
+                        <textarea type="text"
+                                  id="description"
+                                  name="description"
+                                  class="block"
+                                  placeholder="The description o your house"
+                                  required> </textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="purchase_date">Creation/Purchase of the house<span
+                                  class="required-field">*</span></label>
+                        <input type="date"
+                               id="purchase_date"
+                               name="purchase_date"
+                               class="block"
+                               required />
+                    </div>
+                    <div class="box-input">
+                        <p>Type of property <span class="required-field">*</span></p>
+                        <input type="radio"
+                               id="apartment"
+                               name="typeProperty">
+                        <label for="apartament">Apartament</label>
+                        <input type="radio"
+                               id="house"
+                               name="typeProperty">
+                        <label for="house">House</label>
+                    </div>
+                    <div class="optional-box">
+                        <p>Optional</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox"
+                                       id="alarm"
+                                       name="optional[]"
+                                       value="alarm">
+                                <label for="alarm">Alarm</label>
+                            </li>
+                            <li>
+                                <input type="checkbox"
+                                       id="garden"
+                                       name="optional[]"
+                                       value="garden">
+                                <label for="garden">Garden</label>
+                            </li>
+                            <li>
+                                <input type="checkbox"
+                                       id="garage"
+                                       name="optional[]"
+                                       value="garage">
+                                <label for="garage">Garage</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Photos of the Property <span class="required-field">*</span></p>
+                        <input id="images"
+                               type="file"
+                               multiple
+                               accept="image/png, image/jpg"
+                               name="images"
+                               required>
+                    </div>
+                    <input class="btn-submit" type="submit" value="SEND">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
